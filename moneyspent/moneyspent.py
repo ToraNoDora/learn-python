@@ -26,6 +26,7 @@ def getMoneySpent(keyboards, drives, b):
 
 if __name__ == '__main__':
     # stdout - это уже открытый поток
+    # C указателем: fptr = открыт ( ос . Environ [ 'OUTPUT_PATH' ], 'W' ) много мороки было. Поэтому заменил на данный вариант
     fptr = sys . stdout
     # Преобразование
     bnm = input().split()
