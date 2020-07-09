@@ -1,9 +1,9 @@
 import os
 import sys
 
-#
-# Complete the getMoneySpent function below.
-#
+
+
+# Объявляем функцию
 def getMoneySpent(keyboards, drives, b):
     max_of_keyboards=max(keyboards)
     max_of_drives=max(drives)
