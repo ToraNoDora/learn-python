@@ -1,17 +1,18 @@
 SUFFIXES = {1000: ['KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
             1024: ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB']}
-
+# Объявление функции (ключевое слово def запускает обьявление функции, затем имя функции и аргументы в скобках)
+# size и a_kilobyte_is_1024_bytes - аргументы функции
 def approximate_size(size, a_kilobyte_is_1024_bytes=True):
     '''Convert a file size to human-readable form.
 
-    Keyword arguments:
-    size -- file size in bytes
-    a_kilobyte_is_1024_bytes -- if True (default), use multiples of 1024
-                                if False, use multiples of 1000
+        Keyword arguments:
+        size -- file size in bytes
+        a_kilobyte_is_1024_bytes -- if True (default), use multiples of 1024
+                                    if False, use multiples of 1000
 
-    Returns: string
+        Returns: string
 
-    '''
+        '''
     if size < 0:
         raise ValueError('number must be non-negative')
 
@@ -22,7 +23,8 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
             return '{0:.1f} {1}'.format(size, suffix)
 
     raise ValueError('number too large')
-
+# Первый вызывает approximate_size()функцию с двумя аргументами. Внутри approximate_size()функции будет a_kilobyte_is_1024_bytesFalse , поскольку вы явно передали Falseвторой аргумент
+# Второй вызывает approximate_size()функцию только с одним аргументом. Но это нормально, потому что второй аргумент не обязателен! Поскольку вызывающая сторона не указывает, по умолчанию используется второй аргумент True, как определено в объявлении функции
 if __name__ == '__main__':
     print(approximate_size(1000000000000, False))
     print(approximate_size(1000000000000))
