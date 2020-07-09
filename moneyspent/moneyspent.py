@@ -3,11 +3,15 @@ import sys
 
 
 
-# Объявляем функцию
+# Объявляем функцию getMoneySpent
 def getMoneySpent(keyboards, drives, b):
-    max_of_keyboards=max(keyboards)
-    max_of_drives=max(drives)
-    maximum_of_keyboards_and_drives=max(max_of_keyboards,max_of_drives)
+    # Наибольший к клаве
+    max_of_keyboards = max(keyboards)
+    # наибольший к накопителям
+    max_of_drives = max(drives)
+    # Проверяет, одинаковы ли объекты
+    maximum_of_keyboards_and_drives = max(max_of_keyboards, max_of_drives)
+    # Множественное
     if(len(keyboards)==1 and len(drives)==1):
         if(max_of_keyboards+max_of_drives<b):
             return max_of_keyboards+max_of_drives
@@ -18,13 +22,12 @@ def getMoneySpent(keyboards, drives, b):
             keyboards.remove(max_of_keyboards)
             max_of_keyboards=max(keyboards)
         return maximum_of_keyboards_and_drives+max_of_keyboards
-    # Write your code here.
-    #
+
 
 if __name__ == '__main__':
     # stdout - это уже открытый поток
     fptr = sys . stdout
-
+    # Преобразование
     bnm = input().split()
 
     b = int(bnm[0])
