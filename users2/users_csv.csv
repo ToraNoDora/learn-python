@@ -1,0 +1,4 @@
+login,password,phone,verified_phone,email,verified_email,fname,sname,chief_email,license_agree,is_invited,is_chief,notify,allow_skip_material,region,city,role,position,team,department,function
+testFogcsv1,qwerty123,,0,,0,test,Fog1, ,1,0,1,0,1,2906,2912,2907,2908,2909,2910,2911
+testFogcsv2,qwerty123,79199800000,1,fog1@y.ru,1,test,Fog2,,1,0,1,0,1,2906,2912,2907,2908,2909,2910,2911
+testFogcsv3,qwerty123,,0,fog2@y.ru,1,test,Fog3,,1,0,1,0,1,2906,2912,2907,2908,2909,2910,2911
