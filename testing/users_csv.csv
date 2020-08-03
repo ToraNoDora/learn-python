@@ -1,0 +1,2 @@
+login,password,phone,verified_phone,email,verified_email,fname,sname,chief_email,license_agree,is_invited,is_chief,notify,allow_skip_material,region,city,role,position,team,department,function
+testPolcsv1,qwerty123,,0,,0,test,pol,,1,0,1,0,1,2906,2912,2907,2908,2909,2910,2911

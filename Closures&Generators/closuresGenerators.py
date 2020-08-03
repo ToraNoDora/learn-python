@@ -284,7 +284,7 @@ def make_counter(x):
 counter = make_counter(2)
 
 next(counter)
-print(make_counter())
+print(make_counter)
 next(counter)
 
 next(counter)
